@@ -1,0 +1,41 @@
+
+.section-title {
+  /* padding-top: 0; */
+}
+
+.title {
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.1666;
+  text-align: center;
+}
+
+.list-li {
+  display: flex;
+  gap: 30px;
+}
+
+.title-box {
+  position: relative;
+}
+
+.title-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.title-text p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-color);
+}

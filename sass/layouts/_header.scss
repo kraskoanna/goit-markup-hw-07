@@ -1,0 +1,130 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+
+.logo {
+  margin-right: 93px;
+
+  font-family: "Raleway", sans-serif;
+  color: var(--black-color);
+  font-size: 26px;
+  line-height: 1.1923;
+  text-decoration: none;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+}
+
+.logo-header {
+  font-size: 26px;
+  line-height: 1.1923;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+/*---------навігація сайту------------*/
+
+.conteiner-header {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.nav-header {
+  margin-right: auto;
+}
+
+/* .header-nav .item {
+  background-color: rgb(7, 250, 19);
+} */
+/* .header-nav .item:not( :last-child) {
+  margin-right: 50px;
+} */
+/* .header-nav .item:last-child {
+  margin-right: 0;
+} */
+.header-nav {
+  gap: 50px;
+  margin-right: auto;
+}
+/* .header-nav .item + .item {
+  margin-left: 50px;
+} */
+.header-nav-link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.1428;
+  letter-spacing: 0.02em;
+  position: relative;
+  padding-bottom: 33px;
+  transition: color var(--time) var(--timing-function);
+}
+
+/*---------------Авторизація навігації-------------------*/
+/*---------------Активне поле-------------------------*/
+.current {
+  color: var(--accent-color);
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--accent-color);
+}
+
+/*-----авторизація навігації---------*/
+.auth-nav {
+  display: flex;
+
+  line-height: 1.1428;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+
+.item .auth-nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.auth-nav-link {
+  font-weight: 500;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  transition: color var(--time) var(--timing-function);
+}
+
+.auth-nav-link:hover,
+.auth-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.nav-icon-envelope {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.nav-icon-smartphone {
+  fill: currentColor;
+  margin-right: 10px;
+}
