@@ -5,8 +5,7 @@
 }
 
 .header__conteiner {
-  display: flex;
-  align-items: center;
+  @include flex(flex, center, null);
 }
 
 .header__logo {
@@ -17,7 +16,7 @@
 /*---------навігація сайту------------*/
 
 .menu {
-  display: flex;
+  @include flex(flex, null, null);
 }
 
 .navigation {
@@ -67,7 +66,7 @@
 
 /*-----авторизація навігації---------*/
 .auth-nav {
-  display: flex;
+  @include flex(flex, null, null);
   @include font(null, null, 1.1428, 0.02em);
   text-decoration: none;
 }
@@ -77,8 +76,7 @@
 }
 
 .auth-nav__item .auth-nav__link {
-  display: flex;
-  align-items: center;
+  @include flex(flex, center, null);
 }
 
 .auth-nav__link {

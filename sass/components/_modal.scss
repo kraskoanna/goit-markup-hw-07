@@ -39,9 +39,7 @@
   right: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(flex, center, center);
   background-color: transparent;
   &-close:focus,
   &-close:hover {
@@ -72,7 +70,7 @@
   width: 100%;
   height: 40px;
   padding-left: 42px;
-  justify-content: center;
+  @include flex(null, null, center);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   &:focus,
@@ -114,7 +112,7 @@
 .label-textarea {
   width: 100%;
   height: 120px;
-  display: block;
+  @include flex(block, null, null);
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -150,9 +148,7 @@
 	}
 
 .lable-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, center, center);
   margin-bottom: 30px;
 }
 
@@ -162,9 +158,7 @@
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
   margin-right: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex(flex, center, center);
   fill: transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -185,6 +179,7 @@
   &::before {
     content: "";
     position: absolute;
+    @include flex(block, null, null);
     display: block;
     width: 100%;
     height: 1px;
@@ -200,11 +195,9 @@
   height: 50px;
   margin: auto;
   @include font(700, 16px, 30px, null);
-  display: flex;
-  align-items: center;
+  @include flex(flex, center, center);
   text-align: center;
   letter-spacing: 0.06em;
-  justify-content: center;
   color: var(--white-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -216,8 +209,7 @@
 }
 .modal-checkbox {
   margin-bottom: 30px;
-  align-items: center;
-  justify-content: center;
+  @include flex(null, center, center);
 }
 .lable-checkbox {
   @include font(400, 14px, 24px, null);

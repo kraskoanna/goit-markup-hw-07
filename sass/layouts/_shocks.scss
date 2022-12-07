@@ -3,12 +3,10 @@
 }
 
 .features-icon {
-  display: flex;
-  justify-content: center;
+  @include flex(flex, center, center);
   margin-bottom: 30px;
   background-color: var(--background-grey-color);
   border-radius: 4px;
-  align-items: center;
   text-transform: uppercase;
   width: 270px;
   height: 120px;

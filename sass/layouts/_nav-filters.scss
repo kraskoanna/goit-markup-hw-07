@@ -9,11 +9,9 @@
   @include font(500, 16px, 1.625, 0.03em);
   text-align: center;
   color: var(--title-text-color);
-  display: flex;
-  justify-content: center;
+  @include flex(flex, center, center);
   margin: auto;
   margin-bottom: 50px;
-  align-items: center;
 }
 
 .btn-filter__list-btn:not(:last-child) {
@@ -22,9 +20,8 @@
 
 .btn-filter__btn-active {
   padding: 6px 22px;
-  justify-content: center;
+  @include flex(null, center, center);
   text-align: center;
-  align-items: center;
   font-family: "Roboto", sans-serif;
   @include font(500, 16px, 1.625, 0.03em);
   color: var(--title-text-color);

@@ -93,7 +93,6 @@ justify-content: space-around;
   min-width: 216px;
   height: 50px;
   margin: 0 auto;
-  justify-content: center;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -101,6 +100,7 @@ justify-content: space-around;
   letter-spacing: 0.06em;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -397,8 +397,8 @@ justify-content: space-around;
 
 .lable-text {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -433,6 +433,7 @@ justify-content: space-around;
   content: "";
   position: absolute;
   display: block;
+  display: block;
   width: 100%;
   height: 1px;
   background-color: var(--accent-color);
@@ -449,9 +450,9 @@ justify-content: space-around;
   line-height: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   letter-spacing: 0.06em;
-  justify-content: center;
   color: var(--white-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -617,8 +618,8 @@ justify-content: space-around;
   color: var(--social-icon-color);
   border-radius: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   transition: background-color var(--time) var(--timing-function), color var(--time) var(--timing-function);
 }
 .social-list__social-links:hover, .social-list__social-links:focus {
@@ -661,8 +662,8 @@ justify-content: space-around;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   transition: border-color var(--time) var(--timing-function), color var(--time) var(--timing-function);
 }
 .clients-list__client-links:hover, .clients-list__client-links:focus {
@@ -896,6 +897,7 @@ justify-content: space-around;
 }
 
 .projects-list {
+  display: flex;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

@@ -41,8 +41,7 @@
 }
 
 .social-list {
-  display: flex;
-  justify-content: center;
+  @include flex(flex, null, center);
   gap: 10px;
 }
 
@@ -57,9 +56,7 @@
   background-color: var(--white-color);
   color: var(--social-icon-color);
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, center, center);
   transition: background-color var(--time) var(--timing-function),
     color var(--time) var(--timing-function);
     &:hover,
