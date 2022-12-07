@@ -1,4 +1,4 @@
-.feauters-li {
+.list-li__feauters-li {
   flex-basis: calc((100% - 90px) / 4);
 }
 
@@ -24,15 +24,14 @@
   border-color: var(--background-active-button);
 } */
 
-.features {
+.list-li__features {
   color: var(--title-text-color);
-  line-height: 1.1428;
-  font-size: 14px;
+  @include font(null, 14px, 1.1428, null);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.features-list {
-  line-height: 1.7142;
+.list-li__features-list {
+  @include font(null, null, 1.7142, null);
   color: var(--primary-text-color);
 }

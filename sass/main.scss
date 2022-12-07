@@ -1,8 +1,11 @@
 @import "./utils/vars";
 @import "./base/reset";
+@import "./utils/mixins";
 @import "./components/container";
 @import "./base/common";
 
+@import "./components/logo";
+@import "./components/btn";
 
 @import "./layouts/header";
 @import "./layouts/hero";

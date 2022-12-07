@@ -5,23 +5,18 @@
   gap: 30px;
 }
 
-.projects-box > a {
+.projects-list__projects-box > .projects-list__projects-link{
   display: block;
-}
-
-.projects-box > a:hover,
-.projects-box > a:focus {
+  &:hover,
+  &:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
-.projects-link {
+
+.projects-list__projects-link {
   transition: box-shadow var(--time) var(--timing-function),
     border-box var(--time) var(--timing-function);
-}
-.projects-box:hover .projects-focus {
-  transform: translateY(0);
-  transition: transform 250ms linear;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-image {
@@ -31,19 +26,22 @@
   height: 294px;
 }
 
-.projects-focus {
+.projects-image__projects-focus {
   position: absolute;
   top: 0;
   height: 100%;
   padding: 63px 24px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5555;
+  @include font(400, 18px, 1.5555, null);
   color: var(--white-color);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms linear;
   overflow: auto;
+  .projects-list__projects-box:hover & {
+    transform: translateY(0);
+    transition: transform 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .image-tehno {
@@ -81,17 +79,13 @@
   border-left: 1px solid var(--border-color);
 }
 
-.projects-title {
+.projects-border__projects-title {
   margin-bottom: 4px;
-
+  @include font(null, 18px, 2, 0.06em);
   color: var(--title-text-color);
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
 }
 
-.projects-text {
-  font-size: 16px;
-  line-height: 1.875;
+.projects-border__projects-text {
+  @include font(null, 16px, 1.875, null);
   color: var(--primary-text-color);
 }

@@ -1,13 +1,7 @@
-
-.section-title {
-  /* padding-top: 0; */
-}
-
-.title {
+.container__title {
   margin-bottom: 50px;
+  @include font(null, 36px, 1.1666, null);
   color: var(--title-text-color);
-  font-size: 36px;
-  line-height: 1.1666;
   text-align: center;
 }
 
@@ -16,7 +10,7 @@
   gap: 30px;
 }
 
-.title-box {
+.list-li__title-box {
   position: relative;
 }
 
@@ -31,10 +25,8 @@
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.title-text p {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1428;
+.title-text__title-p {
+  @include font(700, 14px, 1.1428, null);
   text-align: center;
   text-transform: uppercase;
   color: var(--white-color);

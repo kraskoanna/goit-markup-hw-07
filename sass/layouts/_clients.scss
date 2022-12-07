@@ -1,14 +1,21 @@
+.section-clients__title {
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+  @include font(null, 36px, 1.1666, null);
+  text-align: center;
+}
+
 .clients-list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.client-item {
+.clients-list__client-item {
   width: 170px;
   height: 92px;
 }
-.client-links {
+.clients-list__client-links {
   width: 100%;
   height: 100%;
   color: var(--social-icon-color);
@@ -19,23 +26,22 @@
   align-items: center;
   transition: border-color var(--time) var(--timing-function),
     color var(--time) var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      border: 1px solid var(--accent-color);
+    }
+    
+    &:hover .clients-list__client-icon,
+    &:focus .clients-list__client-icon {
+      color: var(--accent-color);
+    }
 }
-.client-icon {
+.clients-list__client-icon {
   fill: currentColor;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.client-icon:hover,
-.client-icon:focus {
-  color: var(--accent-color);
-}
-
-.client-links:hover,
-.client-links:focus {
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-}
-
-.client-links:hover .client-icon,
-.client-links:focus .client-icon {
-  color: var(--accent-color);
-}
